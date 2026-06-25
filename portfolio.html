@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. Naven | Full Stack Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Deep Premium Dark Background */
+        body {
+            background: radial-gradient(circle at 50% 50%, #1a1f3c 0%, #0b0e1a 100%);
+            color: #e2e8f0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            overflow-x: hidden;
+        }
+        /* Custom Glowing Navbar */
+        .navbar {
+            background: rgba(11, 14, 26, 0.85) !important;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .nav-link {
+            color: #94a3b8 !important;
+            transition: color 0.3s;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: #38bdf8 !important; /* Cyber Blue Glow */
+        }
+        /* Text Glow Elements */
+        .text-glow {
+            text-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+        }
+        /* Profile Image Glow Style */
+        .profile-img-container {
+            position: relative;
+            display: inline-block;
+        }
+        .profile-img-container img {
+            width: 240px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 3px solid rgba(56, 189, 248, 0.6);
+            box-shadow: 0 0 30px rgba(56, 189, 248, 0.35);
+        }
+        /* Premium Glowing Cards */
+        .premium-card {
+            background: rgba(30, 41, 59, 0.25);
+            border: 1px solid rgba(56, 189, 248, 0.15);
+            border-radius: 20px;
+            backdrop-filter: blur(12px);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .premium-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(56, 189, 248, 0.5);
+            box-shadow: 0 15px 35px rgba(56, 189, 248, 0.2);
+            background: rgba(30, 41, 59, 0.45);
+        }
+        /* Text Links styling */
+        .custom-btn-link {
+            text-decoration: none !important;
+            color: #38bdf8 !important;
+            font-weight: 600;
+            transition: 0.3s;
+            display: inline-block;
+        }
+        .custom-btn-link:hover {
+            color: #7dd3fc !important;
+            text-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
+        }
+        /* Elegant Pill Badges */
+        .skill-tag {
+            background: rgba(56, 189, 248, 0.08);
+            color: #38bdf8;
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            padding: 8px 16px;
+            border-radius: 30px;
+            display: inline-block;
+            font-size: 0.88rem;
+            margin: 6px;
+            transition: all 0.3s;
+        }
+        .skill-tag:hover {
+            background: rgba(56, 189, 248, 0.2);
+            border-color: #38bdf8;
+            color: #fff;
+        }
+        /* Input Box Custom Styling */
+        .dark-input {
+            background: rgba(15, 23, 42, 0.6) !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            color: #fff !important;
+            border-radius: 12px;
+            padding: 12px;
+        }
+        .dark-input:focus {
+            border-color: #38bdf8 !important;
+            box-shadow: 0 0 10px rgba(56, 189, 248, 0.2) !important;
+        }
+        .dark-input::placeholder {
+            color: #64748b !important;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white text-glow" href="#">NAVEN.M</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="py-5 d-flex align-items-center" style="min-height: 85vh;">
+        <div class="container py-5">
+            <div class="row align-items-center g-5 text-center text-md-start">
+                <div class="col-md-7 order-2 order-md-1">
+                    <span class="badge bg-info bg-opacity-25 text-info border border-info border-opacity-50 px-3 py-2 rounded-pill mb-3">Open for Opportunities</span>
+                    <h1 class="display-3 fw-bold text-white text-glow mb-2">M. Naven</h1>
+                    <p class="fs-4 text-info fw-light mb-3">AI Full Stack & Data Analytics Engineer</p>
+                    <p class="text-secondary mb-4" style="font-size: 1.1rem;">
+                        Building complex system interfaces, interactive front-ends, clean backend databases, and optimizing workflows using modern AI tools.
+                    </p>
+                    <div>
+                        <a href="#projects" class="btn btn-info text-dark fw-bold px-4 py-2 me-3 rounded-pill shadow">Explore Projects</a>
+                        <a href="M_Naven_Resume.pdf" download="M_Naven_Resume.pdf" class="btn btn-outline-info px-4 py-2 rounded-pill fw-bold shadow">
+                            📥 Download Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5 order-1 order-md-2 text-center">
+                    <div class="profile-img-container">
+                        <img src="WhatsApp.jpeg" alt="M. Naven Profile Pic" onerror="this.src='https://via.placeholder.com/240x300/1e293b/fff?text=M.+Naven'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5 bg-black bg-opacity-20">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-md-6">
+                    <h2 class="fw-bold text-white text-glow">About Me</h2>
+                    <div style="height: 4px; width: 60px; background: #38bdf8;" class="rounded mb-4"></div>
+                    <p class="text-secondary lead">
+                        To enhance my professional skills, capabilities and knowledge in an organization which recognises the value of hard work and trusts me with responsibilities and challenges.
+                    </p>
+                    
+                    <div class="p-4 premium-card text-start mt-4">
+                        <h4 class="text-info mb-3">Professional Experience</h4>
+                        <span class="text-white fw-bold">2024 - 2025</span>
+                        <p class="text-white mb-0 fw-semibold">Assistant Merchandiser</p>
+                        <p class="text-muted small mb-2">Lovely Offset Printers</p>
+                        <p class="text-secondary small mb-0">Managed internal production operations, demonstrating key team leadership abilities and successfully driving structural workflow goals.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 premium-card text-start">
+                        <h4 class="text-white mb-4 text-glow text-center">Educational Timeline</h4>
+                        <div class="mb-3">
+                            <span class="text-info fw-bold">2021 - 2024</span>
+                            <p class="text-white mb-0 fw-semibold">Bsc Aviation (69%)</p>
+                            <p class="text-muted small">Fighter Wings Aviation College, Chennai</p>
+                        </div>
+                        <div class="mb-3">
+                            <span class="text-info fw-bold">2020 - 2021</span>
+                            <p class="text-white mb-0 fw-semibold">Higher Secondary (78%)</p>
+                            <p class="text-muted small">St.Joseph RC Higher Secondary School, Srivilliputtur</p>
+                        </div>
+                        <div>
+                            <span class="text-info fw-bold">2019 - 2020</span>
+                            <p class="text-white mb-0 fw-semibold">Secondary Education (71%)</p>
+                            <p class="text-muted small">Kamarajar Matric Higher Secondary School, Srivilliputtur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="fw-bold text-white text-glow text-center mb-5">Skills</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 premium-card h-100">
+                        <h3 class="text-white fw-bold mb-3 fs-4" style="color: #38bdf8 !important;">Backend & Python Architecture</h3>
+                        <p class="text-secondary small mb-4">Designing structural application code patterns, servers, and automated data pipelines.</p>
+                        <div class="d-flex flex-wrap">
+                            <span class="skill-tag">Basic Python</span>
+                            <span class="skill-tag">Advanced Python</span>
+                            <span class="skill-tag">OOP Concepts</span>
+                            <span class="skill-tag">Django Framework</span>
+                            <span class="skill-tag">Flask Engine</span>
+                            <span class="skill-tag">REST API Logic</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 premium-card h-100" style="border-color: rgba(56, 189, 248, 0.35); box-shadow: 0 0 25px rgba(56, 189, 248, 0.05);">
+                        <h3 class="text-white fw-bold mb-3 fs-4" style="color: #38bdf8 !important;">Frontend Matrix</h3>
+                        <p class="text-secondary small mb-4">Structuring dynamic viewports, asynchronous operations, and scalable interface components.</p>
+                        <div class="d-flex flex-wrap">
+                            <span class="skill-tag">HTML5 / CSS3</span>
+                            <span class="skill-tag">Bootstrap 5 Grid</span>
+                            <span class="skill-tag">JavaScript (DOM)</span>
+                            <span class="skill-tag">ReactJS</span>
+                            <span class="skill-tag">AJAX / Async Requests</span>
+                            <span class="skill-tag">Tkinter GUI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="p-4 premium-card h-100">
+                        <h3 class="text-white fw-bold mb-3 fs-4" style="color: #38bdf8 !important;">Data Operations & Analytics</h3>
+                        <p class="text-secondary small mb-4">Handling relative schema infrastructure layouts, analytics execution, and automated assistant prompt systems.</p>
+                        <div class="d-flex flex-wrap">
+                            <span class="skill-tag">MySQL Relational</span>
+                            <span class="skill-tag">SQLite Engine</span>
+                            <span class="skill-tag">NumPy Arrays</span>
+                            <span class="skill-tag">Pandas Matrix</span>
+                            <span class="skill-tag">Matplotlib Analytics</span>
+                            <span class="skill-tag">SQL Joins / Triggers</span>
+                            <span class="skill-tag">ChatGPT / Claude</span>
+                            <span class="skill-tag">DeepSeek / Gemini</span>
+                            <span class="skill-tag">GitHub Copilot</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5 bg-black bg-opacity-20">
+        <div class="container">
+            <h2 class="fw-bold text-white text-glow text-center mb-5">Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 premium-card h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="text-white mb-0">Hospital Management</h5>
+                                <span class="badge bg-info text-dark font-monospace">Python + Tkinter</span>
+                            </div>
+                            <p class="text-secondary small">A desktop application to manage patient, doctor, appointment, and billing records safely via SQLite:</p>
+                            <ul class="text-secondary small ps-3">
+                                <li class="mb-1">Implemented report generation with charts using Matplotlib modules.</li>
+                                <li class="mb-1">Generated clean automated analytical reports utilizing ReportLab PDF layouts.</li>
+                                <li>Designed modern user-friendly windows via Tkinter and ttk widgets.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-3">
+                            <hr style="border-color: rgba(255,255,255,0.05);">
+                            <a href="#" class="custom-btn-link">Source Layout →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 premium-card h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="text-white mb-0">Travel & Tourism Hub</h5>
+                                <span class="badge bg-primary text-white font-monospace">HTML + CSS + BS5</span>
+                            </div>
+                            <p class="text-secondary small">A lightweight responsive visual layout tracking targeted holiday destinations:</p>
+                            <ul class="text-secondary small ps-3">
+                                <li class="mb-1">Engineered dynamic fluid landing zones utilizing pure Bootstrap 5 layouts.</li>
+                                <li class="mb-1">Configured semantic item containers to prevent interface overlapping.</li>
+                                <li>Structured CSS keyframe layouts for clean viewport element translations.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-3">
+                            <hr style="border-color: rgba(255,255,255,0.05);">
+                            <a href="#" class="custom-btn-link">View Interface →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 premium-card h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="text-white mb-0">Dynamic E-Com Pipeline</h5>
+                                <span class="badge bg-warning text-dark font-monospace">Django + React + AJAX</span>
+                            </div>
+                            <p class="text-secondary small">High performance store application evaluating async operations over asynchronous targets:</p>
+                            <ul class="text-secondary small ps-3">
+                                <li class="mb-1">Integrated React functional layers with state hooks to execute atomic rendering.</li>
+                                <li class="mb-1">Configured AJAX script callbacks running independent data payload tasks.</li>
+                                <li>Secured cross origin network queries over standard Django session frameworks.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-3">
+                            <hr style="border-color: rgba(255,255,255,0.05);">
+                            <a href="#" class="custom-btn-link">Review System →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 premium-card h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="text-white mb-0">AI-Powered Job Screening Engine</h5>
+                                <span class="badge bg-info text-dark font-monospace">Python API + Claude AI</span>
+                            </div>
+                            <p class="text-secondary small">Automated corporate recruitment portal optimizing applicant tracking routines:</p>
+                            <ul class="text-secondary small ps-3">
+                                <li class="mb-1">Integrated REST API parameters transmitting system objects securely across endpoints.</li>
+                                <li class="mb-1">Leveraged Claude AI prompt maps parsing multi-page structural files cleanly.</li>
+                                <li>Configured secure account generation steps handling sensitive system user roles.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-3">
+                            <hr style="border-color: rgba(255,255,255,0.05);">
+                            <a href="#" class="custom-btn-link">Explore Model →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 premium-card h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="text-white mb-0">Metric Enterprise Analytics</h5>
+                                <span class="badge bg-success text-white font-monospace">Pandas + NumPy + MySQL</span>
+                            </div>
+                            <p class="text-secondary small">Real-time dynamic business data visualizer extracting and isolating production parameters:</p>
+                            <ul class="text-secondary small ps-3">
+                                <li class="mb-1">Processed high dimensional array variables natively using advanced NumPy methods.</li>
+                                <li class="mb-1">Constructed secure transactional script queries across tabular MySQL architectures.</li>
+                                <li>Rendered interactive multi axis chart graphs executing on Matplotlib stacks.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-3">
+                            <hr style="border-color: rgba(255,255,255,0.05);">
+                            <a href="#" class="custom-btn-link">Analyze Pipeline →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container" style="max-width: 850px;">
+            <div class="p-4 p-md-5 premium-card">
+                <div class="row g-4 align-items-start">
+                    
+                    <div class="col-md-5 text-start">
+                        <h3 class="fw-bold text-white text-glow mb-2">Get In Touch 👋</h3>
+                        <p class="text-secondary small mb-4">Feel free to contact me for any project layout, collaboration or technical role inquiries.</p>
+                        
+                        <div class="text-secondary small d-grid gap-3 pt-3" style="border-top: 1px solid rgba(255,255,255,0.08);">
+                            <div>📧 <strong>Email:</strong> navenn919@gmail.com</div>
+                            <div>💬 <strong>Whatsapp:</strong> 9345758711</div>
+                            <div>📍 <strong>Location:</strong> India</div>
+                            <div>🏠 <strong>Address:</strong> 45, Perumalpatti East Street, Srivilliputtur, Virudhunagar</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-7 ps-md-4 style-form-divider" style="border-left: 1px solid rgba(255,255,255,0.08);">
+                        <h3 class="fw-bold text-white mb-1 fs-4">Contact Me</h3>
+                        <p class="text-info small mb-4">Transmission processing active. I'll respond as soon as possible 🚀</p>
+                        
+                        <form id="premiumForm" class="d-grid gap-3">
+                            <div>
+                                <input type="text" class="form-control dark-input" id="clientName" placeholder="Your Name" required>
+                            </div>
+                            <div>
+                                <input type="email" class="form-control dark-input" id="clientEmail" placeholder="Your Email" required>
+                            </div>
+                            <div>
+                                <input type="tel" class="form-control dark-input" id="clientPhone" placeholder="Mobile Number" required>
+                            </div>
+                            <div>
+                                <input type="text" class="form-control dark-input" id="clientSubject" placeholder="Subject" required>
+                            </div>
+                            <div>
+                                <textarea class="form-control dark-input" id="clientMsg" rows="4" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-info text-dark fw-bold rounded-pill py-2 shadow mt-1">Send Message 🚀</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-4 text-muted" style="border-top: 1px solid rgba(255,255,255,0.05);">
+        <p class="mb-0 small">&copy; 2026 M. Naven. Engineered using Bootstrap Grid Framework Standards.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.getElementById('premiumForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('clientName').value;
+            alert("Signal secure! Thank you " + name + ". Data transmission acknowledged successfully.");
+            this.reset();
+        });
+    </script>
+</body>
+</html>
